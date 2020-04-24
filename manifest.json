@@ -1,0 +1,19 @@
+{
+    "name": "zoom-video-manipulator",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "An chrome extension to add keyboard manipulations for zoom video",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://zoom.us/rec/play/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "patch.js"
+    ]
+}
